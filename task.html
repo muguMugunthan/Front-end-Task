@@ -1,0 +1,53 @@
+<html>
+<body>
+<style>
+
+
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+}
+</style>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<center><h2>LOGIN FORM</h2></center><hr><br>
+<form name="myform" action="file:///C:/Users/hp/Desktop/demo.html" onsubmit="return validateform()" >  
+<center>Email-Id: <input type="text"  placeholder="Enter Email Id" name="name"><br> <br>
+Password: <input type="password" placeholder="Enter Password"  name="password"><br><br>  
+<input type="submit"  value="Login">  </center> </form> 
+<center><button onclick="window.location.href='file:///C:/Users/hp/Desktop/signup.html';">Signup</button> <center>
+ 
+</body>
+</html>
+
+ 
